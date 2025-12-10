@@ -32,6 +32,9 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.debug
+            firebaseCrashlytics {
+                mappingFileUploadEnabled = false
+            }
         }
     }
 }
